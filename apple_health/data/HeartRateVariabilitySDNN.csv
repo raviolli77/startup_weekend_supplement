@@ -1,0 +1,2 @@
+sourceName,sourceVersion,device,type,unit,creationDate,startDate,endDate,value
+"Aditya’s Apple Watch","4.0","<<HKDevice: 0x1c4489b00>, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch1,2, software:4.0>","HeartRateVariabilitySDNN","ms",2018-01-31 03:56:15 -0800,2018-01-31 03:55:03 -0800,2018-01-31 03:56:14 -0800,76.1027

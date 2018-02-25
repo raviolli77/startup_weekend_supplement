@@ -4,7 +4,7 @@ This repo serves as a supplement to my presentation on *Machine Learning* showca
 
 ## Structure
 
-+ Exploratory Analysis - Apple Watch
++ Exploratory Analysis - [Apple Watch](/apple_health)
 + Unsupervised Learning - [Spotify Recommender](/spotify_recommender)
 + Supervised Learning - [Customer Churn Prediction](/churn_prediction)
 

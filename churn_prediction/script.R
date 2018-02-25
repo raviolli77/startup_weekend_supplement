@@ -20,7 +20,7 @@ customer_churn %>%
 # Exploring Features Based on Feature Importance for GBM Model 
 
 ## Total Charges
-ggplot(customer_churn_no_id, 
+ggplot(customer_churn, 
        aes(TotalCharges, 
            fill=Contract)) + 
   geom_histogram(bins = 100, 
@@ -32,7 +32,7 @@ ggplot(customer_churn_no_id,
   scale_fill_manual(values = c("#004345", "#8b0086", "#868b00"))
 
 # Monthly Charges
-ggplot(customer_churn_no_id, 
+ggplot(customer_churn, 
        aes(MonthlyCharges, fill=Contract)) + 
   geom_histogram(bins = 200, 
                  na.rm = TRUE) +
@@ -43,7 +43,7 @@ ggplot(customer_churn_no_id,
   scale_fill_manual(values = c("#004345", "#8b0086", "#868b00"))
 
 # Tenure
-ggplot(customer_churn_no_id, 
+ggplot(customer_churn, 
        aes(tenure, fill=Contract)) + 
   geom_histogram(bins=75, 
                  na.rm = TRUE) +
@@ -57,8 +57,7 @@ ggplot(customer_churn_no_id,
 ggplot(customer_churn,
        aes(tenure, TotalCharges,
            colour = PhoneService)) +
-  geom_point(na.rm = TRUE,
-             pch=22) + 
+  geom_point(na.rm = TRUE) + 
   theme_minimal() + 
   labs(x = "Tenure", y = "Total Charges") + 
   ggtitle("Tenure Vs. Total Charges \n(IBM Customer Churn Data Set)") + 
@@ -79,4 +78,5 @@ ggplot(customer_churn,
            colour = InternetService)) +
   geom_point(na.rm = TRUE) +
   facet_wrap( ~ PhoneService) +
-  theme_bw()
+  theme_bw() + 
+  scale_colour_manual(values = c("#004345", "#8b0086", "#868b00"))
